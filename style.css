@@ -1,0 +1,148 @@
+/*  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+display: flex;
+}
+
+.btn-contato button{
+padding: 10px 40px;
+font-size: 18px;
+font-weight: 600;
+background-color: palevioletred;
+border: 0;
+border-radius: 30px;
+cursor: pointer;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+  padding: 40px 4%;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 90px;
+}
+
+
+header a{
+       color: #dbd8d8;
+       text-decoration: none;
+       display: inline-block;
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: palevioletred;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-contato button:hover{
+  box-shadow: 0px 0px 8px palevioletred;
+}
+
+/* ESTILO DO SITE */
+section.topo-do-site{
+padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+align-items: center;
+justify-content: center;
+gap: 90px;
+}
+
+.txt-topo-site h1{
+color: white;
+font-size: 38px;
+}
+
+.txt-topo-site h2{
+  color: white;
+}
+
+.txt-topo-site h1 span{
+ color: palevioletred;
+}
+
+.topo-do-site .txt-topo-site p{
+color: white;
+margin: 40px 0;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.topo-do-site .img-topo-site img{
+position: relative;
+animation: fluctuar 2s ease-in-out infinite alternate;
+border-radius: 25%;
+width: 200px;
+height: 200px;
+}
+@keyframes fluctuar{
+0%{
+  top: 0;
+}
+100%{
+  top: 30px;
+}
+}
+
+/* RESPONSIVIDADE */
+
+
+/* header */
+@media screen and (max-width: 768px){
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  .topo-do-site .flex{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
